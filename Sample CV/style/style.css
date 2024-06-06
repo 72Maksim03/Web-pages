@@ -1,0 +1,602 @@
+:root{
+    --black: #2b2a2c;
+    --grey: #2b2a2c;
+    --light-grey: #cecece;
+    --white: #fff;
+}
+*{
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.2s all linear;
+}
+
+.btn{
+    font-family: Montserrat;
+    width: 40%;
+    height: 52px;
+    border-radius: 25px;
+    color: var(--grey);
+    border: 1px solid var(--light-grey);
+}
+
+.btn:hover{
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .container .inner{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .inner .user{
+    display: flex;
+    justify-content: center;
+}
+
+header .container .inner .user img{
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+header .container .inner .user .user_info h3{
+    color: var(--black);
+    font-size: 16px;
+}
+
+header .container .inner .user .user_info p{
+    color: var(--grey);
+    font-size: 12px;
+}
+
+header .container .navbar a{
+    color: var(--black);
+    margin-left: 3rem;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+header .container .navbar a:hover{
+    border-bottom: 3px solid var(--black);   
+}
+
+.intro .container .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro .container .content{
+    border-bottom: 2px solid var(--light-grey);
+    padding-bottom: 2%;
+}
+
+.intro .container .content .intro_info{
+    width: 49%;
+}
+
+.intro .container .content .intro_img{
+    width: 49%;
+}
+
+.intro .container .content .intro_img img{
+    width: 100%;
+}
+
+.intro .container .content .intro_info .hello{
+    font-size: 36px;
+    color: var(--grey);
+}
+
+.intro .container .content .intro_info h1{
+    font-size: 48px;
+    color: var(--black);
+}
+
+.intro .container .content .intro_info .info{
+    font-size: 16px;
+    color: var(--grey);
+}
+
+.intro .container .content .intro_info_icons{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.intro .container .content .intro_info_icons a{
+    margin-right: 1%;
+}
+
+.intro .container .content .intro_info_icons a img{
+    width: 10%;
+}
+
+.my_works{
+    margin-top: 50px;
+}
+
+.my_works h2{
+    font-size: 48px;
+    color: var(--grey);
+    text-align: center;
+}
+
+.my_works .my_works_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.my_works .my_works_box .my_works_box_item{
+    width: 30%;
+    border: 2px solid var(--light-grey);
+    border-radius: 25px;
+}
+
+.my_works .my_works_box .my_works_box_item img{
+    width: 100%;
+}
+
+
+.my_works .my_works_box .my_works_box_item .category{
+    margin: 4%;
+    margin-bottom: 1%;
+    font-size: 12px;
+    color: var(--grey);
+}
+
+.my_works .my_works_box .my_works_box_item .shop_info{
+    margin: 4%;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: var(--black);
+}
+
+.about_me{
+    margin-top: 120px;
+}
+
+.about_me .container .content{
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+    align-items: center;
+}
+
+.about_me .container .content .about_me_img{
+    width: 40%;
+}
+
+.about_me .container .content .about_me_img img{
+    width: 100%;
+}
+
+.about_me .container .content .about_me_img .shadow{
+    width: 80%;
+    height: 414px;
+    background-color: #efefef;
+    margin-top: -414px;
+    margin-left: -15%;
+}
+
+.about_me .container .content .about_me_info{
+    width: 40%;
+}
+
+.about_me .container .content .about_me_info h2{
+    font-size: 45px;
+    color: var(--black);
+    margin-bottom: 40px;
+}
+
+.about_me .container .content .about_me_info h3{
+    font-size: 92px;
+    color: var(--light-grey);
+    margin-bottom: 35px;
+}
+
+.about_me .container .content .about_me_info p{
+    font-size: 12px;
+    color: var(--light-grey);
+    margin-bottom: 70px;
+}
+
+.udemy{
+    margin-top: 100px;
+    width: 100%;
+    height: 250px;
+    background: url(../img/reviews.png) center center/cover no-repeat;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.udemy .descr{
+    margin-top: 180px;
+    font-family: Montserrat;
+    color: var(--light-grey);
+    line-height: 28px; 
+    padding: 0 20%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.udemy .udemy_info{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.udemy .udemy_info h3{
+    margin-top: 1%;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2b2a2c;
+}
+
+.udemy .udemy_info p{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: #717072;
+    margin-top: 0.5%;
+}
+
+.udemy .udemy_info .stars{
+    font-size: 14px;
+    margin-top: 0.5%;
+}
+
+.udemy .udemy_info .stars .grey{
+    color: var(--light-grey);
+}
+
+.my_courses{
+    margin-top: 200px;
+}
+
+.my_courses .container .content h2{
+    font-family: Montserrat;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 700;
+    color: #2b2a2c;
+}
+
+.my_courses .container .content .descr{
+    font-family: Montserrat;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+    color: #717072;
+}
+
+.my_courses .container .content .box{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.my_courses .container .content .box .item{
+    width: 30%;
+}
+
+.my_courses .container .content .box .item img{
+    width: 100%;
+}
+
+.my_courses .container .content .box h3{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #2b2a2c;
+    margin-top: 20px;
+}
+
+.my_courses .container .content .box h4{
+    font-family: Montserrat;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #2b2a2c;
+}
+
+.my_courses .container .content .box p{
+    font-family: Montserrat;
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight: 300;
+    color: #717072;
+}
+
+.my_courses .container .content .box input{
+    margin-top: 28px;
+}
+
+.my_courses .container .content .more{
+    text-align: right;
+}
+
+.my_courses .container .content .more a{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    letter-spacing: 0.05em;
+    color: #717072;
+}
+
+footer{
+    background-color: var(--grey);
+    margin-top: 125px;
+}
+
+footer .container .content{
+    padding: 22px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .container .content .info{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    color: #8d8d8e;
+}
+
+footer .container .content .info .icons a{
+    margin-right: 2px;
+}
+
+footer .container .content .navbar a{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8d8d8e;
+    margin-left: 5px;
+}
+
+@media (max-width: 1250px){
+    .container{
+        max-width: 1000px;
+    }
+    .about_me .container .content .about_me_info h3 {
+        font-size: 76px;
+    }
+}
+
+@media (max-width: 1250px){
+    .container{
+        max-width: 1000px;
+    }
+    .about_me .container .content .about_me_info h3 {
+        font-size: 76px;
+    }
+}
+
+@media (max-width: 1050px){
+    .container{
+        max-width: 800px;
+    }
+    .btn{
+        font-size: 12px;
+    }
+    .intro .container .content .intro_info .hello {
+        font-size: 24px;
+    }
+    .intro .container .content .intro_info h1 {
+        font-size: 36px;
+        color: var(--black);
+    }
+    .about_me .container .content .about_me_info h2 {
+        font-size: 36px;
+    }
+    .about_me .container .content .about_me_info h3 {
+        font-size: 48px;
+    }
+    .udemy .descr {
+        font-size: 12px;
+    }
+    .my_courses .container .content .box h3 {
+        font-size: 16px;
+    }
+    footer .container .content .info {
+        width: 40%;
+    }
+}
+
+@media (max-width: 850px){
+    .container{
+        max-width: 600px;
+    }
+    header .container .navbar a {
+        margin-left: 1.5rem;
+        font-size: 12px;
+    }
+    .intro .container .content .intro_info h1 {
+        font-size: 24px;
+    }
+    .intro .container .content .intro_info .hello {
+        font-size: 20px;
+    }
+    .btn{
+        height: 36px;
+        font-size: 10px;
+    }
+    .my_works h2 {
+        font-size: 36px;
+    }
+    .my_works .my_works_box .my_works_box_item .shop_info {
+        font-size: 14px;
+    }
+    .about_me .container .content .about_me_info h3 {
+        font-size: 36px;
+    }
+    .about_me .container .content .about_me_info h2 {
+        margin-bottom: 20px;
+    }
+    .about_me .container .content .about_me_info h3 {
+        margin-bottom: 15px;
+    }
+    .about_me .container .content .about_me_img .shadow {
+        height: 300px;
+        margin-top: -300px;
+    }
+}
+
+@media (max-width: 650px){
+    header{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    header .container .inner {
+        display: block;
+    }
+    header .container .inner .navbar {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2%;
+    }
+    .intro{
+        margin-top: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .intro .container .content .intro_info .hello {
+        font-size: 16px;
+    }
+    .intro .container .content .intro_info h1 {
+        font-size: 20px;
+    }
+    .intro .container .content .intro_info .info {
+        font-size: 12px;
+    }
+    .btn {
+        height: 28px;
+        font-size: 8px;
+    }
+    .my_works h2 {
+        font-size: 24px;
+    }
+    .my_works .my_works_box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .my_works .my_works_box .my_works_box_item {
+        width: 60%;
+        margin-bottom: 3%;
+    }
+    .about_me {
+        margin-top: 40px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .about_me .container .content .about_me_info h2 {
+        font-size: 24px;
+    }
+    .about_me .container .content .about_me_info h3 {
+        font-size: 24px;
+    }
+    .about_me .container .content .about_me_info {
+        width: 45%;
+    }
+    .about_me .container .content .about_me_info p {
+        font-size: 8px;
+        margin-bottom: 20px;
+    }
+    .about_me .container .content {
+        gap: 0%;
+    }
+    .about_me .container .content .about_me_img .shadow {
+        height: 150px;
+        margin-top: -150px;
+    }
+    .about_me .container .content .about_me_info h2 {
+        margin-bottom: 5px;
+    }
+    .about_me .container .content .about_me_info h3 {
+        margin-bottom: 5px;
+    }
+    .udemy .descr {
+        font-size: 8px;
+        margin-top: 160px;
+    }
+    .my_courses {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .my_courses .container .content h2 {
+        font-size: 24px;
+    }
+    .my_courses .container .content .descr {
+        font-size: 12px;
+    }
+    .my_courses .container .content .box {
+        margin-top: 30px;
+    }
+    .my_courses .container .content .box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .my_courses .container .content .box .item {
+        width: 60%;
+        margin-bottom: 3%;
+    }
+    .my_courses .container .content .box h3 {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .my_courses .container .content .box h4 {
+        font-size: 10px;
+        margin-top: 8px;
+    }
+    .my_courses .container .content .box p {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    .my_courses .container .content .box input {
+        margin-top: 12px;
+    }
+    footer{
+        padding-right: 5%;
+        padding-left: 5%;
+        margin-top: 30px;
+    }
+    footer .container .content .info {
+        font-size: 10px;
+    }
+    footer .container .content .info .icons a img{
+        width: 18%;
+    }
+    footer .container .content .navbar a {
+        font-size: 12px;
+    }
+}
