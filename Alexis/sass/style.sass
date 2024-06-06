@@ -1,0 +1,2150 @@
+$color_1: #38c695
+$color_2: #b27cf5
+$color_3: #feb960
+$main-color: #fc5f45
+
+=link_hover
+    &:hover
+        color: $main-color
+        transition: 0.5s
+
+=back_text_style
+    opacity: 0.3
+    font-family: 'Poppins'
+    font-size: 17.8vw
+    line-height: 17.8vw
+    font-weight: 400
+    text-transform: uppercase
+    color: #e0e0e0
+    position: relative
+    z-index: -150
+
+=section_title_style
+    font-family: 'Libre Baskerville'
+    font-size: 3.3vw
+    font-weight: 700
+    color: #313131
+
+=section_text_style
+    font-family: 'Poppins'
+    font-size: 1vw
+    font-weight: 400
+    color: #616161
+
+=info_about_mem
+    &_info
+        &_mem
+            display: flex
+            padding: 10%
+            width: 100%
+            align-items: center
+            background-color: #fff
+            &_descr
+                width: 55%
+                &_title
+                    font-family: 'Poppins'
+                    font-size: 1.3vw
+                    font-weight: 500
+                    color: #272727
+                &_text
+                    font-family: Poppins
+                    font-size: 1vw
+                    margin-top: 2.1vw
+                    font-weight: 400
+                    color: #616161
+            &_icon
+                margin-left: 7.2vw
+            &_line
+                width: 2px
+                height: 9.8vw
+                margin-left: 2.2vw
+                background-color: #efefef
+            &_socMed
+                margin-left: 1.6vw
+                &_1
+                    a
+                        font-family: 'Poppins'
+                        font-size: 1vw
+                        font-weight: 400
+                        color: #616161
+                        text-decoration: none
+                        margin-bottom: 1.1vw
+
+=steps_right_item_style
+     &_item
+        display: flex
+        &_descr
+            width: 37vw
+            padding-bottom: 5%
+            padding-right: 5%
+            height: 85%
+            margin-right: -18%
+            margin-top: -2vw
+            background-color: #fff
+            position: relative
+            z-index: 5
+            &_num
+                font-family: 'Libre Baskerville'
+                font-size: 2.2vw
+                font-weight: 700
+                text-transform: uppercase
+                color: #e0e0e0
+                margin-top: 1.5vw
+                margin-left: 1.5vw
+            &_title
+                font-family: 'Poppins'
+                font-size: 1.5vw
+                font-weight: 400
+                color: #272727
+                margin-left: 6vw
+                margin-top: -2vw
+            &_text
+                font-family: 'Poppins'
+                margin-left: 6vw
+                margin-top: 1.5vw
+                font-size: 1vw
+                font-weight: 400
+                color: #616161
+        img
+            width: 36vw
+            margin-right: 27%
+
+=steps_left_item_style
+    &_item
+        display: flex
+        &_descr
+            width: 32vw
+            padding-bottom: 5%
+            padding-right: 5%
+            height: 85%
+            margin-left: -18%
+            margin-top: -2vw
+            background-color: #fff
+            position: relative
+            z-index: 5
+            &_num
+                font-family: 'Libre Baskerville'
+                font-size: 2.2vw
+                font-weight: 700
+                text-transform: uppercase
+                color: #e0e0e0
+                margin-top: 1.5vw
+                margin-left: 1.5vw
+            &_title
+                font-family: 'Poppins'
+                font-size: 1.5vw
+                font-weight: 400
+                color: #272727
+                margin-left: 6vw
+                margin-top: -2vw
+            &_text
+                font-family: 'Poppins'
+                margin-left: 6vw
+                margin-top: 1.5vw
+                font-size: 1vw
+                font-weight: 400
+                color: #616161
+        img
+            width: 36vw
+            margin-left: 21.7%
+
+=style_for_btn
+    width: 20%
+    font-family: 'Poppins'
+    font-size: 1vw
+    font-weight: 600
+    text-transform: uppercase
+    color: #ffffff
+    border-radius: 20px
+
+.triangle-up
+    width: 0
+    height: 0
+    border-left: 20px solid transparent
+    border-right: 20px solid transparent
+    border-bottom: 20px solid white
+
+html
+    scroll-behavior: smooth
+
+@font-face
+    font-family: 'Wisdom-Script'
+    src: url('../fonts/Wisdom-Script-AJ.otf') format('opentype')
+    font-weight: normal
+    font-style: normal
+
+header
+    width: 100%
+    position: fixed
+    z-index: 1000
+    background-color: #fff
+    .header_content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 5.7vw
+        &_logo
+            a
+                font-size: 2.3vw
+                font-family: 'Wisdom-Script', sans-serif
+                font-weight: 400
+                color: #616161
+                text-decoration: none
+                span
+                    color: $main-color
+                +link_hover
+        
+        nav
+            font-family: 'Poppins', sans-serif
+            font-size: 1vw
+            font-weight: 500
+            a
+                color: #272727
+                text-decoration: none
+                margin-right: 1vw
+                +link_hover
+
+.navbar_for_mobile
+    display: none
+
+.intro
+    width: 100%
+    height: 55vw
+    background: url(../img/intro/background.jpg) center (center / cover) no-repeat
+    &_content
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        &_title
+            font-family: 'Libre Baskerville'
+            margin-top: 13vw
+            font-size: 4vw
+            text-align: center
+            width: 60%
+            line-height: 6vw
+            font-weight: 400
+            color: #ffffff
+        &_btn
+            +style_for_btn
+            background-color: $main-color
+            margin-top: 5.1vw
+        &_icons
+            display: flex
+            width: 60%
+            margin-top: 6.25vw
+            justify-content: space-between
+            &_item
+                width: 30%
+                text-align: center
+                &_img
+                    width: 100%
+                    img
+                        width: 22%
+                p
+                    margin-top: 2.84vw
+                    font-family: 'Poppins'
+                    font-size: 1vw
+                    font-weight: 500
+                    text-transform: uppercase
+                .item_1
+                    color: $color_1
+                .item_2
+                    color: $color_2
+                .item_3
+                    color: $color_3
+
+.about_us_content
+    margin-top: 9.76vw
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    &_img
+        width: 52%
+        margin-right: -2%
+        img
+            width: 100%
+    &_descr
+        width: 52%
+        margin-left: -2%
+        background-color: #fff
+        z-index: 2
+        &_back
+            +back_text_style
+        &_title
+            +section_title_style
+            margin-top: -11.2vw
+            margin-left: 3vw
+        &_text
+            margin-top: 0.65vw
+            margin-left: 3vw
+            margin-bottom: 0.98vw
+            +section_text_style
+
+.focus
+    margin-top: 11.2vw
+    background-color: #f7f7f7
+    position: relative
+    z-index: 1
+    padding-bottom: 5%
+    &_content
+        text-align: center
+        &_back
+            +back_text_style
+        &_title
+            +section_title_style
+            margin-top: -8vw
+        &_subtitle
+            +section_text_style
+            margin-top: 2.5vw
+            margin-bottom: 10vw
+        &_icons
+            display: flex
+            justify-content: space-between
+            &_item
+                width: 23%
+                padding: 8% 4%
+                background-color: #ffffff
+                img
+                    width: 40%
+                &_title
+                    margin-top: 2vw
+                    font-family: 'Poppins'
+                    font-size: 1.2vw
+                    font-weight: 500
+                    color: #313131
+                &_text
+                    margin-top: 2vw
+                    font-family: 'Poppins'
+                    font-size: 1vw
+                    line-height: 1.6vw
+                    font-weight: 400
+                    color: #616161
+            .focus_item_1
+                border-bottom: 2px solid #fc5f45
+                &:hover
+                    box-shadow: 0 0 2vw #fc5f45
+                    transition: 0.5s
+            .focus_item_2
+                border-bottom: 2px solid #38c695
+                &:hover
+                    box-shadow: 0 0 2vw #38c695
+                    transition: 0.5s
+            .focus_item_3
+                border-bottom: 2px solid #b27cf5
+                &:hover
+                    box-shadow: 0 0 2vw #b27cf5
+                    transition: 0.5s
+            .focus_item_4
+                border-bottom: 2px solid #feb960
+                &:hover
+                    box-shadow: 0 0 2vw #feb960
+                    transition: 0.5s
+                    
+.video
+    width: 100%
+    height: 25vw
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-align: center
+    background: url(../img/video/video_background.jpeg) center ( center / cover ) no-repeat
+    &_content
+        &_title
+            font-family: 'Poppins'
+            font-size: 2vw
+            font-weight: 400
+            color: #ffffff
+        a
+            img
+                width: 5%
+                margin-top: 2.44vw
+        &_text
+            margin-top: 3.1vw
+            font-family: 'Poppins'
+            font-size: 1vw
+            font-weight: 400
+            color: #ffffff
+
+.portfolio
+    padding-bottom: 9.7vw
+    &_content
+        &_back
+            +back_text_style
+            text-align: center
+        &_title
+            +section_title_style
+            text-align: center
+            margin-top: -7vw
+        &_subtitle
+            +section_text_style
+            text-align: center
+            margin-top: 2.5vw
+        &_projects
+            margin-top: 5vw
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            gap: 1vw
+            &_item
+                width: 32%
+                cursor: pointer
+                img
+                    width: 100%
+                .plus
+                    width: 15%
+                    margin-top: -100%
+                    margin-left: 50%
+                    transform: translateX(-50%)
+                    cursor: pointer
+                &_text
+                    text-align: center
+                    font-family: 'Poppins'
+                    font-size: 1vw
+                    font-weight: 500
+                    letter-spacing: 0.05em
+                    color: #313131
+                    margin-top: -5.7vw
+                    background-color: #fff
+                    z-index: 100
+                    position: relative
+                    padding: 5% 0
+                &:hover
+                    box-shadow: 0 0 2vw $main-color
+                    transition: 0.5s
+
+.team
+    padding-bottom: 9.7vw
+    background-color: #f7f7f7
+    position: relative
+    z-index: 1
+    &_content
+        &_back
+            +back_text_style
+            text-align: center
+        &_title
+            +section_title_style
+            text-align: center
+            margin-top: -7vw
+        &_subtitle
+            +section_text_style
+            text-align: center
+            margin-top: 2.5vw
+        &_members
+            margin-top: 5.1vw
+            display: flex
+            gap: 2vw
+            justify-content: center
+            &_item
+                text-align: center
+                width: 23%
+                background-color: #fff
+                img
+                    width: 92%
+                    margin-top: 4%
+                    height: 18vw
+                &_name
+                    margin-top: 1.1vw
+                    font-family: 'Poppins'
+                    font-size: 1.2vw
+                    font-weight: 500
+                &_job
+                    font-family: Poppins
+                    font-size: 0.85vw
+                    font-weight: 400
+                    color: #616161
+                    margin-top: 0.84vw
+                    margin-bottom: 1.6vw
+                .member_name_1
+                    color: $color-3
+                .member_name_2
+                    color: $color-1
+                .member_name_3
+                    color: $color-2
+                .member_name_4
+                    color: $main-color
+        .members_item_1
+            border-bottom: 2px solid $color-3
+            &:hover
+                box-shadow: 0 0 2vw $color-3
+                transition: 0.5s
+        .members_item_2
+            border-bottom: 2px solid $color-1
+            &:hover
+                box-shadow: 0 0 2vw $color-1
+                transition: 0.5s
+        .members_item_3
+            border-bottom: 2px solid $color-2
+            &:hover
+                box-shadow: 0 0 2vw $color-2
+                transition: 0.5s
+        .members_item_4
+            border-bottom: 2px solid $main-color
+            &:hover
+                box-shadow: 0 0 2vw $main-color
+                transition: 0.5s
+        &_1
+            +info_about_mem
+            &_info
+                transform: scaleY(0)
+                display: none
+                &_triangle
+                    margin-left: 10%
+        .active
+            transform: scaleY(100%)
+            display: block
+            transition: 1s linear
+        &_2
+            +info_about_mem
+            &_info
+                transform: scaleY(0)
+                display: none
+                &_triangle
+                    margin-left: 36%
+        .active
+            transform: scaleY(100%)
+            display: block
+            transition: 1s linear
+        &_3
+            +info_about_mem
+            &_info
+                transform: scaleY(0)
+                display: none
+                &_triangle
+                    margin-left: 61%
+        .active
+            transform: scaleY(100%)
+            display: block
+            transition: 1s linear
+        &_4
+            +info_about_mem
+            &_info
+                transform: scaleY(0)
+                display: none
+                &_triangle
+                    margin-left: 86%
+        .active
+            transform: scaleY(100%)
+            display: block
+            transition: 1s linear
+        
+.coffee
+    width: 100%
+    height: 30vw
+    display: block
+    background: url(../img/coffee/background.png) center ( center / cover ) no-repeat
+    &_content
+        display: flex
+        justify-content: space-between
+        padding-top: 8vw
+        &_item
+            text-align: center
+            &_img1
+                width: 35%
+            &_numbers
+                font-family: 'Poppins'
+                font-size: 1.3vw
+                margin-top: 1.9vw
+                font-weight: 500
+                color: #fefefe
+            &_desc
+                opacity: 0.7
+                font-family: 'Poppins'
+                font-size: 1vw
+                font-weight: 400
+                color: #fefefe
+                margin-top: 1.8vw
+            &_img2
+                width: 10%
+                margin-top: 2vw
+
+.steps
+    padding-bottom: 9.7vw
+    &_content
+        &_back
+            +back_text_style
+            text-align: center
+        &_title
+            +section_title_style
+            text-align: center
+            margin-top: -7vw
+        &_subtitle
+            +section_text_style
+            text-align: center
+            margin-top: 1.7vw
+        &_main
+            margin-top: 8vw
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            &_right
+                +steps_right_item_style
+            &_left
+                +steps_left_item_style
+            .step_item_1
+                border-bottom: 2px solid $main-color
+                &:hover
+                    box-shadow: 0 0 2vw $main-color
+                    transition: 0.5s
+            .step_item_2
+                border-bottom: 2px solid $color-1
+                &:hover
+                    box-shadow: 0 0 2vw $color-1
+                    transition: 0.5s
+            .step_item_3
+                border-bottom: 2px solid $color-2
+                &:hover
+                    box-shadow: 0 0 2vw $color-2
+                    transition: 0.5s
+            .step_item_4
+                border-bottom: 2px solid $color-3
+                &:hover
+                    box-shadow: 0 0 2vw $color-3
+                    transition: 0.5s
+                
+.pricing
+    padding-bottom: 9.9vw
+    background-color: #f7f7f7
+    position: relative
+    z-index: 1
+    &_content
+        &_back
+            +back_text_style
+            text-align: center
+        &_title
+            +section_title_style
+            text-align: center
+            margin-top: -7vw
+        &_subtitle
+            +section_text_style
+            text-align: center
+            margin-top: 1.7vw
+        &_main
+            margin-top: 5vw
+            display: flex
+            justify-content: center
+            gap: 2vw
+            &_item
+                width: 27vw
+                background-color: #fff
+                box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05)
+                &_title
+                    font-family: 'Poppins'
+                    font-size: 1.3vw
+                    font-weight: 500
+                    color: #313131
+                    text-align: center
+                    margin-top: 2.27vw
+                &_circle
+                    width: 6.9vw
+                    height: 6.9vw
+                    margin: 2.3vw auto
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-content: center
+                    text-align: center
+                    &_price
+                        font-family: 'Poppins'
+                        font-size: 1.5vw
+                        font-weight: 400
+                        color: #ffffff
+                    &_month
+                        font-family: 'Poppins'
+                        font-size: 0.8vw
+                        font-weight: 400
+                        color: #ffffff
+                &_pricelist
+                    text-align: center
+                    p
+                        font-family: 'Poppins'
+                        font-size: 1vw
+                        font-weight: 400
+                        color: #616161
+                        span
+                            font-weight: 500
+                            color: #272727
+                button
+                    margin-top: 2.6vw
+                    margin-bottom: 2.6vw
+                    margin-left: 50%
+                    transform: translateX(-50%)
+                    +style_for_btn
+                    width: 50%
+                    padding-top: 0.6vw
+                    padding-bottom: 0.5vw
+
+.pricing_item_1
+    border-top: 2px solid #38c695
+    .pricing_content_main_item_circle
+        background: url(../img/pricing/bg_green.png) center ( center / cover ) no-repeat
+    button
+        color: #38c695
+    &:hover
+        box-shadow: 0 0 2vw #38c695
+        transition: 0.5s
+
+.pricing_item_2
+    border-top: 2px solid #fc5f45
+    .pricing_content_main_item_circle
+        background: url(../img/pricing/bg_red.png) center ( center / cover ) no-repeat
+    button
+        background-color: #fc5f45
+    &:hover
+        box-shadow: 0 0 2vw #fc5f45
+        transition: 0.5s
+
+.pricing_item_3
+    border-top: 2px solid #b27cf5
+    .pricing_content_main_item_circle
+        background: url(../img/pricing/bg_purple.png) center ( center / cover ) no-repeat
+    button
+        border-color: #b27cf5
+        color: #b27cf5
+        &:hover
+            background-color: #b27cf5
+    &:hover
+        box-shadow: 0 0 2vw #b27cf5
+        transition: 0.5s
+
+.test
+    padding-bottom: 9.9vw
+    background: url(../img/test/test_back.jpg) center ( center / cover ) no-repeat
+    width: 100%
+    position: relative
+    z-index: 1
+    &_content
+        &_back
+            +back_text_style
+            text-align: center
+        &_title
+            +section_title_style
+            text-align: center
+            margin-top: -7vw
+            color: #ffffff
+        &_subtitle
+            +section_text_style
+            text-align: center
+            margin-top: 1.7vw
+            color: #ffffff
+        &_main
+            margin-top: 5.14vw
+            display: flex
+            justify-content: center
+            &_img
+                width: 30vw
+                height: 26vw
+                img
+                    width: 30vw
+                    height: 26vw
+            &_about
+                height: 26vw
+                width: 58vw
+                &_p1
+                    background-color: #fff
+                    margin-top: 5%
+                    height: 80%
+                    border-bottom: 2px solid #fc5f45
+                    &_back
+                        opacity: 0.3
+                        font-family: 'Libre Baskerville'
+                        font-size: 22vw
+                        line-height: 22vw
+                        font-weight: 700
+                        color: #e0e0e0
+                    &_descr
+                        font-family: 'Poppins'
+                        font-size: 1vw
+                        line-height: 1.5vw
+                        font-weight: 400
+                        color: #616161
+                        margin-left: 3.5vw
+                        margin-top: -19vw
+                        margin-right: 5vw
+                    &_sign
+                        font-family: 'Sacramento'
+                        font-size: 2.6vw
+                        font-weight: 400
+                        color: #272727
+                        margin-top: 2.5vw
+                        margin-left: 3.5vw
+                    &_name
+                        font-family: 'Poppins'
+                        font-size: 1.1vw
+                        font-weight: 500
+                        color: #272727
+                        margin-left: 3.5vw
+                    &_job
+                        font-family: 'Poppins'
+                        font-size: 0.8vw
+                        font-weight: 400
+                        color: #fc5f45
+                        margin-top: 1vw
+                        margin-left: 3.5vw
+                &_p2
+                    display: flex
+                    justify-content: end
+                    margin-top: 1%
+                    img
+                        width: 1.17vw
+                        height: 1.17vw
+                    &_empty
+                        width: 1.17vw
+                        height: 1.17vw
+                        border: 2px solid #ffffff
+                        border-radius: 100%
+                        margin-left: 1%
+
+.select
+    padding-bottom: 9.9vw
+    &_content
+        &_back
+            +back_text_style
+            text-align: center
+        &_title
+            +section_title_style
+            text-align: center
+            margin-top: -7vw
+        &_subtitle
+            +section_text_style
+            text-align: center
+            margin-top: 1.7vw
+        &_block
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            margin-top: 5vw
+            gap: 2vw
+            &_item
+                width: 25vw
+                &_head
+                    display: flex
+                    align-items: center
+                    img
+                        width: 15%
+                    .smaller_img
+                        width: 12%
+                    p
+                        font-family: 'Poppins'
+                        font-size: 1.2vw
+                        line-height: 1.6vw
+                        margin-left: 1.5vw
+                        font-weight: 500
+                        color: #272727
+                        text-align: left
+                &_descr
+                    font-family: 'Poppins'
+                    font-size: 1vw
+                    line-height: 1.8vw
+                    font-weight: 400
+                    color: #616161
+                    text-align: left
+                    margin-top: 2.1vw
+        &_foot
+            margin-top: 9.9vw
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 1.5vw
+            p
+                font-family: 'Poppins'
+                font-size: 1.6vw
+                font-weight: 400
+                color: #272727
+                margin-top: 1.5%
+            button
+                +style_for_btn
+                width: 12vw
+                background-color: #fc5f45
+
+.blog
+    background-color: #f7f7f7
+    padding-bottom: 9.9vw
+    position: relative
+    z-index: 1
+    &_content
+        &_back
+            +back_text_style
+            text-align: center
+        &_title
+            +section_title_style
+            text-align: center
+            margin-top: -7vw
+        &_subtitle
+            +section_text_style
+            text-align: center
+            margin-top: 1.7vw
+        &_block
+            display: flex
+            justify-content: center
+            gap: 6vw
+            margin-top: 5vw
+            &_b1
+                width: 45vw
+                background-color: #ffffff
+                box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05)
+                border-bottom: 2px solid #fc5f45
+                &:hover
+                    box-shadow: 0 0 2vw #fc5f45
+                    transition: 0.5s
+                img
+                    width: 45vw
+                &_user
+                    display: flex
+                    gap: 2vw
+                    margin-left: 3vw
+                    margin-top: -4vw
+                    &_name
+                        font-family: 'Poppins'
+                        font-size: 1vw
+                        line-height: 2vw
+                        font-weight: 500
+                        text-transform: uppercase
+                        color: #fc5f45
+                    &_date
+                        opacity: 0.7
+                        font-family: 'Poppins'
+                        font-size: 0.8vw
+                        line-height: 2vw
+                        font-weight: 400
+                        color: #ffffff
+                &_cont
+                    padding: 6%
+                    margin-top: 2vw
+                    &_title
+                        font-family: 'Poppins'
+                        font-size: 1.4vw
+                        line-height: 2vw
+                        font-weight: 500
+                        color: #272727
+                    &_text
+                        font-family: 'Poppins'
+                        font-size: 1.1vw
+                        line-height: 1.8vw
+                        font-weight: 400
+                        color: #616161
+                        margin-top: 2vw
+                        a
+                            text-decoration: none
+                            font-weight: 500
+                            color: #272727
+            &_b2
+                width: 45vw
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                &_item
+                    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.05)
+                    padding: 5%
+                    &_user
+                        display: flex
+                        gap: 2vw
+                        &_name
+                            font-family: 'Poppins'
+                            font-size: 1vw
+                            line-height: 2vw
+                            font-weight: 500
+                            text-transform: uppercase
+                            color: #000
+                        &_date
+                            opacity: 0.7
+                            font-family: 'Poppins'
+                            font-size: 0.8vw
+                            line-height: 2vw
+                            font-weight: 400
+                            color: #616161
+                    &_cont
+                        margin-top: 1.4vw
+                        &_title
+                            font-family: 'Poppins'
+                            font-size: 1.2vw
+                            line-height: 2vw
+                            font-weight: 500
+                            color: #272727
+                        &_text
+                            font-family: 'Poppins'
+                            font-size: 1.1vw
+                            line-height: 1.6vw
+                            font-weight: 400
+                            color: #616161
+                            margin-top: 1.4vw
+                            a
+                                font-weight: 500
+                                color: #000
+                                text-decoration: none
+
+.blog_item_1
+    border-bottom: 2px solid #38c695
+    &:hover
+        box-shadow: 0 0 2vw #38c695
+        transition: 0.5s
+    .blog_content_block_b2_item_user_name
+        color: #38c695
+    .blog_content_block_b2_item_cont
+        &_text
+            a
+                color: #38c695
+
+.blog_item_2
+    border-bottom: 2px solid #b27cf5
+    &:hover
+        box-shadow: 0 0 2vw #b27cf5
+        transition: 0.5s
+    .blog_content_block_b2_item_user_name
+        color: #b27cf5
+    .blog_content_block_b2_item_cont
+        &_text
+            a
+                color: #b27cf5
+
+.blog_item_3
+    border-bottom: 2px solid #feb960
+    &:hover
+        box-shadow: 0 0 2vw #feb960
+        transition: 0.5s
+    .blog_content_block_b2_item_user_name
+        color: #feb960
+    .blog_content_block_b2_item_cont
+        &_text
+            a
+                color: #feb960
+
+.subscribe
+    width: 100%
+    height: 27.7vw
+    text-align: center
+    padding-top: 9%
+    h3
+        font-family: 'Poppins'
+        font-size: 2vw
+        font-weight: 400
+        color: #272727
+    &_content
+        margin-top: 3.5vw
+        display: flex
+        align-items: center
+        justify-content: center
+        input
+            width: 31.25vw
+            height: 3.3vw
+            background-color: #f7f7f7
+            border: 2px solid #efefef
+            border-radius: 25px 0 0 25px
+            font-family: 'Poppins'
+            font-size: 1vw
+            color: #616161
+            padding-left: 1.9vw
+            margin-right: -8vw
+        button
+            +style_for_btn
+            background-color: #fc5f45
+            border-radius: 0px 25px 25px 0px
+            height: 3.3vw
+            width: 13vw
+
+.contact
+    width: 100%
+    height: 100vw
+    background: url(../img/contact/background.jpg) center ( center / cover ) no-repeat
+    position: relative
+    z-index: 1
+    &_content
+        &_back
+            +back_text_style
+            text-align: center
+        &_title
+            +section_title_style
+            text-align: center
+            margin-top: -7vw
+        &_subtitle
+            +section_text_style
+            text-align: center
+            margin-top: 1.7vw
+        &_form
+            width: 52.4%
+            margin-left: 23.8%
+            margin-top: 5vw
+            &_inputs
+                display: flex
+                flex-wrap: wrap
+                gap: 1vw
+                width: 49vw
+                input
+                    width: 24vw
+                    height: 3.3vw
+                    background-color: #ffffff
+                    border: 1px solid #efefef
+                    border-radius: 4px
+                    text-align: center
+                    font-family: 'Poppins'
+                    font-size: 1vw
+                    font-weight: 400
+                    color: #616161
+            textarea
+                resize: none
+                width: 49vw
+                height: 20vw
+                border-radius: 4px
+                margin-top: 1.5vw
+                text-align: center
+            button
+                +style_for_btn
+                margin-left: 50%
+                transform: translateX(-50%)
+                margin-top: 3.3vw
+                background-color: #fc5f45
+                border-radius: 25px
+                width: 18vw
+
+footer
+    margin-top: -25vw
+    position: relative
+    z-index: 10
+    .footer_content
+        width: 80%
+        height: 14.65vw
+        margin-left: 10%
+        background-color: rgba(38,39,50,0.85)
+        display: flex
+        justify-content: center
+        &_logo
+            width: 25%
+            text-align: center
+            padding-top: 6%
+            border-bottom: 2px solid #fc5f45
+            a
+                font-size: 3vw
+                font-family: 'Wisdom-Script', sans-serif
+                font-weight: 400
+                color: #616161
+                text-decoration: none
+                span
+                    color: $main-color
+                +link_hover
+        &_address1
+            width: 25%
+            padding: 4%
+            border-bottom: 2px solid #38c695
+            &_title
+                font-family: 'Poppins'
+                font-size: 1.2vw
+                font-weight: 500
+                color: #38c695
+            &_text
+                font-family: 'Poppins'
+                font-size: 1vw
+                font-weight: 400
+                color: #fef4f2
+                margin-top: 2vw
+        &_address2
+            width: 25%
+            padding: 4%
+            border-bottom: 2px solid #b27cf5
+            &_title
+                font-family: 'Poppins'
+                font-size: 1.2vw
+                font-weight: 500
+                color: #b27cf5
+            &_text
+                font-family: 'Poppins'
+                font-size: 1vw
+                font-weight: 400
+                color: #fef4f2
+                margin-top: 2vw
+        &_socMed
+            width: 25%
+            padding: 4%
+            border-bottom: 2px solid #feb960
+            &_title
+                font-family: 'Poppins'
+                font-size: 1.2vw
+                font-weight: 500
+                color: #feb960
+            &_icons
+                margin-top: 2vw
+                a
+                    img
+                        width: 20%
+                        margin-right: 2%
+
+@media screen and (min-width: 1400px)
+    =back_text_style
+        font-size: 273.9px
+        line-height: 273.9px
+
+    =section_title_style
+        font-size: 50px
+
+    =section_text_style
+        font-size: 16px
+        
+    =info_about_mem
+        &_info
+            &_mem
+                &_descr
+                    &_title
+                        font-size: 20px
+                    &_text
+                        font-size: 15px
+                        margin-top: 30px
+                &_icon
+                    margin-left: 108px
+                &_line
+                    width: 2px
+                    height: 150px
+                    margin-left: 34px
+                &_socMed
+                    margin-left: 25px
+                    &_1
+                        a
+                            font-size: 15px
+                            margin-bottom: 16px
+
+    =steps_right_item_style
+        &_item
+            &_descr
+                width: 568px
+                margin-top: -30px
+                &_num
+                    font-size: 34px
+                    margin-top: 23px
+                    margin-left: 23px
+                &_title
+                    font-size: 23px
+                    margin-left: 92px
+                    margin-top: -30px
+                &_text
+                    margin-left: 92px
+                    margin-top: 23px
+                    font-size: 15px
+            img
+                width: 553px
+
+    =steps_left_item_style
+        &_item
+            &_descr
+                width: 492px
+                margin-top: -30px
+                &_num
+                    font-size: 33px
+                    margin-top: 23px
+                    margin-left: 23px
+                &_title
+                    font-size: 23px
+                    margin-left: 92px
+                    margin-top: -30
+                &_text
+                    margin-left: 92px
+                    margin-top: 23px
+                    font-size: 15px
+            img
+                width: 553px
+
+    header
+        .header_content
+            &_logo
+                a
+                    font-size: 35px
+                    
+            nav
+                font-size: 15px
+                a
+                    margin-right: 10px
+                
+    .intro
+        &_content
+            &_title
+                font-size: 60px
+            &_btn
+                font-size: 14px
+            &_icons
+                &_item
+                    p
+                        font-size: 18px
+
+    .about_us_content
+        margin-top: 150px
+        &_descr
+            &_back
+                +back_text_style
+            &_title
+                +section_title_style
+                margin-top: -172px
+                margin-left: 46px
+            &_text
+                margin-top: 10px
+                margin-left: 46px
+                margin-bottom: 1px
+                +section_text_style
+
+    .focus
+        &_content
+            &_icons
+                &_item
+                    &_title
+                        font-size: 18px
+                    &_text
+                        font-size: 16px
+                        line-height: 20px
+
+    .video
+        &_content
+            &_title
+                font-size: 32px
+            &_text
+                font-size: 16px
+
+    .portfolio
+        &_content
+            &_title
+                margin-top: -102px
+            &_subtitle
+                margin-top: 40px
+            &_projects
+                margin-top: 80px
+                gap: 16px
+                &_item
+                    &_text
+                        font-size: 16px
+                        margin-top: -91.2px
+
+    .team
+        padding-bottom: 150px
+        &_content
+            &_back
+                +back_text_style
+            &_title
+                +section_title_style
+                margin-top: -107px
+            &_subtitle
+                +section_text_style
+                margin-top: 38px
+            &_members
+                margin-top: 78px
+                gap: 30px
+                &_item
+                    img
+                        height: 276px
+                    &_name
+                        margin-top: 17px
+                        font-size: 18px
+                    &_job
+                        font-size: 13px
+                        margin-top: 13px
+                        margin-bottom: 25px
+            &_1
+                +info_about_mem
+            &_2
+                +info_about_mem
+            &_3
+                +info_about_mem
+            &_4
+                +info_about_mem
+
+    .coffee
+        height: 461px
+        &_content
+            padding-top: 123px
+            &_item
+                &_numbers
+                    font-size: 20px
+                    margin-top: 29px
+                &_desc
+                    font-size: 15px
+                    margin-top: 28px
+                &_img2
+                    margin-top: 30px
+
+    .steps
+        padding-bottom: 149px
+        &_content
+            &_back
+                +back_text_style
+            &_title
+                +section_title_style
+                margin-top: -108px
+            &_subtitle
+                +section_text_style
+                margin-top: 26px
+            &_main
+                margin-top: 123px
+                &_right
+                    +steps_right_item_style
+                &_left
+                    +steps_left_item_style
+
+    .pricing
+        padding-bottom: 152px
+        &_content
+            &_main
+                margin-top: 80px
+                gap: 32px
+                &_item
+                    width: 368px
+                    &_title
+                        font-size: 20px
+                        margin-top: 36px
+                    &_circle
+                        width: 110px
+                        height: 110px
+                        margin: 36px auto
+                        &_price
+                            font-size: 24px
+                        &_month
+                            font-size: 12px
+                    &_pricelist
+                        p
+                            font-size: 16px
+                    button
+                        margin-top: 40px
+                        margin-bottom: 40px
+                        padding-top: 9px
+                        padding-bottom: 8px
+                        font-size: 20px
+
+    .test
+        padding-bottom: 151px
+        &_content
+            &_subtitle
+                +section_text_style
+                margin-top: 26px
+            &_main
+                margin-top: 79px
+                &_img
+                    width: 460px
+                    height: 400px
+                    img
+                        width: 460px
+                        height: 400px
+                &_about
+                    height: 460px
+                    width: 891px
+                    &_p1
+                        height: 70%
+                        &_back
+                            font-size: 338px
+                            line-height: 338px
+                        &_descr
+                            font-size: 15px
+                            line-height: 23px
+                            margin-left: 23px
+                            margin-top: -292px
+                            margin-right: 77px
+                        &_sign
+                            font-size: 40px
+                            margin-top: 38px
+                            margin-left: 54px
+                        &_name
+                            font-size: 17px
+                            margin-left: 54px
+                        &_job
+                            font-size: 12px
+                            margin-top: 15px
+                            margin-left: 53px
+                    &_p2
+                        img
+                            width: 18px
+                            height: 18px
+                        &_empty
+                            width: 18px
+                            height: 18px
+
+    .select
+        padding-bottom: 150px
+        &_content
+            &_back
+                +back_text_style
+            &_title
+                +section_title_style
+                margin-top: -108px
+            &_subtitle
+                +section_text_style
+                margin-top: 26px
+            &_block
+                margin-top: 77px
+                gap: 30px
+                &_item
+                    width: 384px
+                    &_head
+                        p
+                            font-size: 18px
+                            line-height: 25px
+                            margin-left: 25px
+                    &_descr
+                        font-size: 15px
+                        line-height: 28px
+                        margin-top: 32px
+            &_foot
+                margin-top: 150px
+                gap: 25px
+                p
+                    font-size: 25px
+                button
+                    +style_for_btn
+                    width: 184px
+                    font-size: 15px
+
+    .blog
+        padding-bottom: 150px
+        &_content
+            &_back
+                +back_text_style
+            &_title
+                +section_title_style
+                margin-top: -108px
+            &_subtitle
+                +section_text_style
+                margin-top: 26px
+            &_block
+                gap: 92px
+                margin-top: 77px
+                &_b1
+                    width: 691px
+                    img
+                        width: 691px
+                    &_user
+                        gap: 31px
+                        margin-left: 46px
+                        margin-top: -61px
+                        &_name
+                            font-size: 15px
+                            line-height: 31px
+                        &_date
+                            font-size: 12px
+                            line-height: 30px
+                    &_cont
+                        margin-top: 30px
+                        &_title
+                            font-size: 22px
+                            line-height: 30px
+                        &_text
+                            font-size: 17px
+                            line-height: 28px
+                            margin-top: 30px
+                &_b2
+                    width: 691px
+                    &_item
+                        &_user
+                            gap: 30px
+                            &_name
+                                font-size: 15px
+                                line-height: 30px
+                            &_date
+                                font-size: 12px
+                                line-height: 30px
+                        &_cont
+                            margin-top: 22px
+                            &_title
+                                font-size: 18px
+                                line-height: 30px
+                            &_text
+                                font-size: 17px
+                                line-height: 25px
+                                margin-top: 22px
+
+    .subscribe
+        height: 425px
+        h3
+            font-size: 30px
+        &_content
+            margin-top: 54px
+            input
+                width: 480px
+                height: 51px
+                font-size: 15px
+                padding-left: 29px
+                margin-right: -123px
+            button
+                +style_for_btn
+                height: 51px
+                width: 180px
+                border-radius: 0px 25px 25px 0px
+                font-size: 15px
+
+    .contact
+        height: 1536px
+        &_content
+            &_back
+                +back_text_style
+            &_title
+                +section_title_style
+                margin-top: -108px
+            &_subtitle
+                +section_text_style
+                margin-top: 26px
+            &_form
+                margin-top: 77px
+                &_inputs
+                    width: 753px
+                    gap: 15px
+                    input
+                        width: 369px
+                        height: 51px
+                        font-size: 15px
+                textarea
+                    margin-top: 23px
+                    width: 753px
+                    height: 300px
+                button
+                    margin-top: 51px
+                    width: 276px
+                    font-size: 15px
+
+    footer
+        margin-top: -384px
+        .footer_content
+            height: 225px
+            &_logo
+                a
+                    font-size: 46px
+            &_address1
+                &_title
+                    font-size: 18px
+                &_text
+                    font-size: 15px
+                    margin-top: 30px
+            &_address2
+                &_title
+                    font-size: 18px
+                &_text
+                    font-size: 15px
+                    margin-top: 30px
+            &_socMed
+                &_title
+                    font-size: 18px
+                &_icons
+                    margin-top: 30px
+
+@media screen and (max-width: 600px)
+
+    =info_about_mem
+        &_info
+            &_mem
+                padding: 4%
+                &_descr
+                    width: 66%
+                    &_title
+                        font-size: 2vw
+                    &_text
+                        font-size: 1.5vw
+                &_icon
+                    margin-left: 4vw
+                &_socMed
+                    &_1
+                        a
+                            font-size: 2vw
+
+    =section_title_style
+        font-size: 5vw
+        margin-top: -9vw
+
+    =section_text_style
+        font-size: 2vw
+
+    =steps_right_item_style
+        &_item
+            margin-left: 10%
+            &_descr
+                margin-right: -27%
+                &_num
+                    font-size: 2.8vw
+                &_title
+                    font-size: 2.2vw
+                &_text
+                    font-size: 1.7vw
+            img
+                width: 55vw
+
+    =steps_left_item_style
+        &_item
+            &_descr
+                width: 42vw
+                &_num
+                    font-size: 2.8vw
+                &_title
+                    font-size: 2.2vw
+                &_text
+                    font-size: 1.7vw
+            img
+                width: 55vw
+                margin-left: 19.5% 
+
+    header
+        .header_content
+            display: none
+        .navbar_for_mobile
+            display: block
+
+    .header_content_logo
+        font-size: 4vw
+        font-family: 'Wisdom-Script', sans-serif
+        font-weight: 400
+        color: #616161
+        text-decoration: none
+        text-decoration: none
+        span
+            color: $main-color
+        +link_hover
+
+    .logo_12
+        font-size: 40px
+
+    .navbar-toggler
+        background-color: rgba(0, 0, 0, 0.6)
+        width: 10vw
+        height: 10vw
+        padding: 1vw
+        &-icon
+            width: 8vw
+            height: 8vw
+
+    .intro
+        height: 60vw
+        &_content
+            &_title
+                margin-top: 11vw
+            &_btn
+                +style_for_btn
+                width: 30%
+                font-size: 2vw
+            &_icons
+                margin-top: 6vw
+                &_item
+                    &_img
+                        width: 100%
+                        img
+                            width: 40%
+                    p
+                        margin-top: 2.5vw
+                        font-size: 1.5vw
+
+    .about_us_content
+        margin-top: 5vw
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &_img
+            width: 70%
+            margin-right: 0
+        &_descr
+            width: 70%
+            margin-left: 0
+            &_title
+                font-size: 5vw
+                margin-left: 22vw
+            &_text
+                margin-left: 0
+                font-size: 1.7vw
+
+    .focus
+        margin-top: 6vw
+        &_content
+            &_title
+                margin-top: -9vw
+                font-size: 5vw
+            &_subtitle
+                margin-bottom: 6vw
+                font-size: 2vw
+            &_icons
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                &_item
+                    width: 80%
+                    margin-bottom: 5%
+                    img
+                        width: 10%
+                    &_title
+                        font-size: 3vw
+                    &_text
+                        font-size: 1.6vw
+
+    .video
+        height: 32vw
+        &_content
+            &_title
+                font-size: 3.5vw
+            a
+                img
+                    width: 8%
+                    margin-top: 1vw
+            &_text
+                margin-top: 1.5vw
+                font-size: 2vw
+
+    .portfolio
+        &_content
+            &_title
+                margin-top: -9vw
+                font-size: 5vw
+            &_subtitle
+                margin-top: 2vw
+                font-size: 2vw
+
+    .team
+        &_content
+            &_title
+                margin-top: -9vw
+                font-size: 5vw
+            &_subtitle
+                margin-top: 2vw
+                font-size: 2vw
+            &_members
+                gap: 1vw
+                &_item
+                    text-align: center
+                    width: 24%
+                    &_name
+                        font-size: 1.8vw
+                    &_job
+                        font-size: 1.2vw
+            &_1
+                +info_about_mem
+            &_2
+                +info_about_mem
+            &_3
+                +info_about_mem
+            &_4
+                +info_about_mem
+
+    .coffee
+        height: 30vw
+        &_content
+            padding-top: 5vw
+            &_item
+                &_img1
+                    width: 70%
+                &_numbers
+                    font-size: 1.8vw
+                &_desc
+                    font-size: 1.4vw
+                    margin-top: 1.5vw
+                &_img2
+                    width: 10%
+                    margin-top: 0
+
+    .steps
+        &_content
+            &_title
+                +section_title_style
+            &_subtitle
+                +section_text_style
+            &_main
+                margin-top: 8vw
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                &_right
+                    +steps_right_item_style
+                &_left
+                    +steps_left_item_style
+                .step_item_1
+                    border-bottom: 2px solid $main-color
+                    &:hover
+                        box-shadow: 0 0 2vw $main-color
+                        transition: 0.5s
+                .step_item_2
+                    border-bottom: 2px solid $color-1
+                    &:hover
+                        box-shadow: 0 0 2vw $color-1
+                        transition: 0.5s
+                .step_item_3
+                    border-bottom: 2px solid $color-2
+                    &:hover
+                        box-shadow: 0 0 2vw $color-2
+                        transition: 0.5s
+                .step_item_4
+                    border-bottom: 2px solid $color-3
+                    &:hover
+                        box-shadow: 0 0 2vw $color-3
+                        transition: 0.5s
+
+    .pricing
+        &_content
+            &_title
+                +section_title_style
+            &_subtitle
+                +section_text_style
+            &_main
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                &_item
+                    width: 60vw
+                    &_title
+                        font-size: 2.5vw
+                        margin-top: 1vw
+                    &_circle
+                        width: 12vw
+                        height: 12vw
+                        margin: 1vw auto
+                        &_price
+                            font-size: 2.8vw
+                        &_month
+                            font-size: 1.8vw
+                    &_pricelist
+                        p
+                            font-size: 2vw
+                    button
+                        margin-top: 0.6vw
+                        +style_for_btn
+                        width: 40%
+                        font-size: 2vw
+                        padding-top: 1.6vw
+                        padding-bottom: 1.5vw
+
+    .pricing_item_1
+        border-top: 2px solid #38c695
+        .pricing_content_main_item_circle
+            background: url(../img/pricing/bg_green.png) center ( center / cover ) no-repeat
+        button
+            color: #38c695
+        &:hover
+            box-shadow: 0 0 2vw #38c695
+            transition: 0.5s
+
+    .pricing_item_2
+        border-top: 2px solid #fc5f45
+        .pricing_content_main_item_circle
+            background: url(../img/pricing/bg_red.png) center ( center / cover ) no-repeat
+        button
+            background-color: #fc5f45
+        &:hover
+            box-shadow: 0 0 2vw #fc5f45
+            transition: 0.5s
+
+    .pricing_item_3
+        border-top: 2px solid #b27cf5
+        .pricing_content_main_item_circle
+            background: url(../img/pricing/bg_purple.png) center ( center / cover ) no-repeat
+        button
+            border-color: #b27cf5
+            color: #b27cf5
+            &:hover
+                background-color: #b27cf5
+        &:hover
+            box-shadow: 0 0 2vw #b27cf5
+            transition: 0.5s
+
+    .test
+        &_content
+            &_title
+                +section_title_style
+                color: #ffffff
+            &_subtitle
+                +section_text_style
+                color: #ffffff
+            &_main
+                &_img
+                    width: 32vw
+                    height: 30vw
+                    img
+                        width: 32vw
+                        height: 30vw
+                &_about
+                    &_p1
+                        height: 95%
+                        &_descr
+                            font-size: 1.5vw
+                            line-height: 1.8vw
+                        &_sign
+                            font-size: 3vw
+                            margin-top: 0.5vw
+                        &_name
+                            font-size: 1.5vw
+                        &_job
+                            font-size: 1.4vw
+
+    .select
+        &_content
+            &_title
+                +section_title_style
+            &_subtitle
+                +section_text_style
+            &_block
+                gap: 4vw
+                &_item
+                    width: 40vw
+                    &_head
+                        img
+                            width: 20%
+                        .smaller_img
+                            width: 12%
+                        p
+                            font-size: 2.2vw
+                            line-height: 2.6vw
+                    &_descr
+                        font-size: 2vw
+                        line-height: 2.6vw
+            &_foot
+                margin-top: 5vw
+                p
+                    font-size: 2.2vw
+                    margin-top: 3.5%
+                button
+                    +style_for_btn
+                    width: 20vw
+                    font-size: 2vw
+
+    .blog
+        &_content
+            &_title
+                +section_title_style
+            &_subtitle
+                +section_text_style
+            &_block
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                gap: 2vw
+                &_b1
+                    width: 60vw
+                    img
+                        width: 60vw
+                    &_user
+                        &_name
+                            font-size: 2vw
+                            line-height: 3vw
+                        &_date
+                            font-size: 1.8vw
+                            line-height: 3vw
+                    &_cont
+                        &_title
+                            font-size: 2.4vw
+                            line-height: 3vw
+                        &_text
+                            font-size: 2.1vw
+                            line-height: 2.8vw
+                &_b2
+                    width: 60vw
+                    gap: 2vw
+                    &_item
+                        &_user
+                            gap: 2vw
+                            &_name
+                                font-size: 2vw
+                                line-height: 3vw
+                            &_date
+                                font-size: 1.8vw
+                                line-height: 3vw
+                        &_cont
+                            &_title
+                                font-size: 2.2vw
+                                line-height: 3vw
+                            &_text
+                                font-size: 2.1vw
+                                line-height: 2.6vw
+
+    .blog_item_1
+        border-bottom: 2px solid #38c695
+        &:hover
+            box-shadow: 0 0 2vw #38c695
+            transition: 0.5s
+        .blog_content_block_b2_item_user_name
+            color: #38c695
+        .blog_content_block_b2_item_cont
+            &_text
+                a
+                    color: #38c695
+
+    .blog_item_2
+        border-bottom: 2px solid #b27cf5
+        &:hover
+            box-shadow: 0 0 2vw #b27cf5
+            transition: 0.5s
+        .blog_content_block_b2_item_user_name
+            color: #b27cf5
+        .blog_content_block_b2_item_cont
+            &_text
+                a
+                    color: #b27cf5
+
+    .blog_item_3
+        border-bottom: 2px solid #feb960
+        &:hover
+            box-shadow: 0 0 2vw #feb960
+            transition: 0.5s
+        .blog_content_block_b2_item_user_name
+            color: #feb960
+        .blog_content_block_b2_item_cont
+            &_text
+                a
+                    color: #feb960
+
+    .subscribe
+        padding-top: 7%
+        h3
+            font-size: 3vw
+        &_content
+            input
+                width: 40.25vw
+                height: 5.3vw
+                font-size: 1.5vw
+            button
+                +style_for_btn
+                font-size: 1.5vw
+                height: 5.3vw
+                width: 19vw
+
+    .contact
+        &_content
+            &_title
+                +section_title_style
+            &_subtitle
+                +section_text_style
+            &_form
+                margin-top: 3vw
+                &_inputs
+                    width: 50vw
+                    input
+                        width: 50vw
+                        height: 4vw
+                        font-size: 1.5vw
+                textarea
+                    width: 50vw
+                    font-size: 1.5vw
+                button
+                    +style_for_btn
+                    margin-left: 55%
+                    transform: translateX(-50%)
+                    font-size: 1.5vw
+                    width: 20vw
+
+    footer
+        margin-top: -20vw
+        .footer_content
+            &_logo
+                padding-top: 5%
+                a
+                    font-size: 4vw
+            &_address1
+                padding: 2%
+                &_title
+                    font-size: 2vw
+                &_text
+                    font-size: 1.4vw
+                    margin-top: 1vw
+            &_address2
+                padding: 2%
+                &_title
+                    font-size: 2vw
+                &_text
+                    font-size: 1.4vw
+                    margin-top: 1vw
+            &_socMed
+                padding: 2%
+                &_title
+                    font-size: 2vw
+                &_icons
+                    a
+                        img
+                            width: 18%
